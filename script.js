@@ -10,8 +10,12 @@ frame.style.width = BASE_W + "px";
 frame.style.height = BASE_H + "px";
 
 function fitFrame() {
-  const scale = wrap.clientWidth / BASE_W;
+  const scale = Math.min(
+    window.innerWidth / BASE_W,
+    window.innerHeight / BASE_H,
+  );
   frame.style.transform = `scale(${scale})`;
+  wrap.style.width = BASE_W * scale + "px";
   wrap.style.height = BASE_H * scale + "px";
 }
 
