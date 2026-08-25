@@ -14,11 +14,10 @@ body {
 body {
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
 }
 
 .sheet-wrap {
-  width: 100%;
   overflow: hidden;
   background: #000;
 }
