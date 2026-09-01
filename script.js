@@ -1,7 +1,7 @@
 // "Natural" size the sheet is rendered at before scaling to fit the screen.
 // Tweak these to change how zoomed-in the sheet looks on wide/desktop screens.
-const BASE_W = 1100;
-const BASE_H = 750;
+const BASE_W = 1400;
+const BASE_H = 955;
 
 const wrap = document.querySelector(".sheet-wrap");
 const frame = document.querySelector(".sheet-frame");
